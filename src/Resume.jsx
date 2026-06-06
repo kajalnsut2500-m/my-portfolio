@@ -65,7 +65,7 @@ const resumeData = {
       num: "P/01",
       title: "PERFORMANCE-AWARE & SECURE IOT SMART HOME NETWORK",
       desc: "Star-topology smart-home IoT simulation with OLSR multi-hop routing, multi-layer security, and failover — co-authored as an IEEE conference paper.",
-      image: "/images/project1.jpeg",
+      image: process.env.PUBLIC_URL + "/images/project1.jpeg",
       bullets: [
         "Designed star-topology smart-home IoT network; connected sensors, actuators & a centralized gateway.",
         "Implemented OLSR routing for multi-hop communication; evaluated throughput, latency, PDR & jitter.",
@@ -79,7 +79,7 @@ const resumeData = {
       num: "P/02",
       title: "SMART ROUTE — INTELLIGENT TOLL & ROUTE PLANNER",
       desc: "Full-stack route planner with three modes (shortest distance, minimum toll, fastest time), Floyd-Warshall + caching, and live Google Maps traffic.",
-      image: "/images/project2.jpeg",
+      image: process.env.PUBLIC_URL + "/images/project2.jpeg",
       bullets: [
         "Built route planner with 3 modes: shortest distance, minimum toll, and fastest time.",
         "Implemented Floyd-Warshall algorithm + caching, reducing API calls by 60%.",
