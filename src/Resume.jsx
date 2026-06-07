@@ -310,7 +310,7 @@ function Nav() {
 
       {/* CTA */}
 <a href="/Kajal_Maurya_Resume_2026.pdf" download="Kajal_Maurya_Resume_2026.pdf" className="btn-primary" style={{ padding: "0.5rem 1.2rem", fontSize: "0.65rem" }} target="_blank" rel="noopener noreferrer">↓ RESUME     
-        ↓ RESUME
+
       </a>
     </nav>
   );
