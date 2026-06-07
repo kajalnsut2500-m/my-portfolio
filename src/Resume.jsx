@@ -254,6 +254,12 @@ const globalCSS = `
     text-decoration: none;
   }
   .btn-ghost:hover { color: var(--white); }
+  @media print {
+    nav, .btn-primary, .btn-outline, .btn-ghost { display: none !important; }
+    body { background: #fff; color: #000; }
+    section { border: none !important; padding: 2rem 1rem !important; }
+    * { color: #000 !important; border-color: #ccc !important; }
+  }
 `;
 
 // ── NAV ───────────────────────────────────────────────────────────────────────
@@ -399,7 +405,7 @@ function Hero() {
       {/* CTAs */}
       <div style={{ display: "flex", gap: "1rem", alignItems: "center", padding: "2rem 0", flexWrap: "wrap" }}>
         <a href="#contact" className="btn-primary">&gt;_ GET IN TOUCH</a>
-        <a href="#" className="btn-outline">↓ DOWNLOAD CV</a>
+        <a href="#" className="btn-outline" onClick={e => { e.preventDefault(); window.print(); }}>↓ DOWNLOAD CV</a>
         <a href="#projects" className="btn-ghost">VIEW PROJECTS ↗</a>
       </div>
 
@@ -740,7 +746,7 @@ function Contact() {
 
       {/* Footer */}
       <div style={{ marginTop: "3rem", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border)", paddingTop: "2rem" }}>
-        <a href="#" className="btn-primary">↓ DOWNLOAD RESUME (PDF)</a>
+        <a href="#" className="btn-primary" onClick={e => { e.preventDefault(); window.print(); }}>↓ DOWNLOAD RESUME (PDF)</a>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "var(--font-mono)", fontSize: "0.65rem", color: "var(--grey)", letterSpacing: "0.1em" }}>
           <span style={{ fontSize: "0.5rem" }}>◈</span> {address.toUpperCase()}
         </div>
