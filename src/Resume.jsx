@@ -309,7 +309,7 @@ function Nav() {
       </div>
 
       {/* CTA */}
-      <a href={`mailto:${resumeData.contact.email}`} className="btn-primary" style={{ padding: "0.5rem 1.2rem", fontSize: "0.65rem" }}>
+<a href="/Kajal_Maurya_Resume_2026.pdf" download="Kajal_Maurya_Resume_2026.pdf" className="btn-primary" style={{ padding: "0.5rem 1.2rem", fontSize: "0.65rem" }} target="_blank" rel="noopener noreferrer">↓ RESUME     
         ↓ RESUME
       </a>
     </nav>
@@ -405,7 +405,7 @@ function Hero() {
       {/* CTAs */}
       <div style={{ display: "flex", gap: "1rem", alignItems: "center", padding: "2rem 0", flexWrap: "wrap" }}>
         <a href="#contact" className="btn-primary">&gt;_ GET IN TOUCH</a>
-        <a href="#" className="btn-outline" onClick={e => { e.preventDefault(); window.print(); }}>↓ DOWNLOAD CV</a>
+        <a href="/Kajal_Maurya_Resume_2026.pdf" download="Kajal_Maurya_Resume_2026.pdf" className="btn-outline" target="_blank" rel="noopener noreferrer">↓ DOWNLOAD CV</a>
         <a href="#projects" className="btn-ghost">VIEW PROJECTS ↗</a>
       </div>
 
@@ -746,7 +746,7 @@ function Contact() {
 
       {/* Footer */}
       <div style={{ marginTop: "3rem", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border)", paddingTop: "2rem" }}>
-        <a href="#" className="btn-primary" onClick={e => { e.preventDefault(); window.print(); }}>↓ DOWNLOAD RESUME (PDF)</a>
+<a href="/Kajal_Maurya_Resume_2026.pdf" download="Kajal_Maurya_Resume_2026.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">↓ DOWNLOAD RESUME (PDF)</a>        
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "var(--font-mono)", fontSize: "0.65rem", color: "var(--grey)", letterSpacing: "0.1em" }}>
           <span style={{ fontSize: "0.5rem" }}>◈</span> {address.toUpperCase()}
         </div>
